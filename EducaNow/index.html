@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <title>EducaNow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: rgb(6, 38, 68);
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        nav ul li {
+            display: inline;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(6, 38, 68);
+            
+        }
+
+        .banner {
+            position: relative;
+            width: 100%;
+            height: auto;
+            min-height: 400px;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-size: cover;
+            background-position: center;
+            background-image: url(./img/banner.png);
+        }
+
+        .container {
+            position: relative; 
+            z-index: 2;
+        }
+
+        .banner-content {
+            max-width: 800px;
+        }
+
+        :root {
+            color: aliceblue;
+            text-align: center;
+            
+        }
+
+        footer {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 35px 0;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" width="150px" , height="150px">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./cursos.html">CURSOS</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="banner" id="home">
+        <div class="container">
+            <h1>Bem-vindo à EducaNow!</h1>
+            <p>Aprenda de forma inovadora e tecnologica.</p>
+        </div>
+    </section>
+    <section id="sobre">
+        <h1>Sobre EducaNow</h1>
+        <p>A EducaNow nasceu do sonho de tornar a educação mais acessível e inovadora. Os desenvolvedores <strong>Marco Antonio</strong>
+            e <strong> Beatrys</strong>, apaixonados por tecnologia e aprendizado, uniram forças para criar uma plataforma que transforma
+            o ensino em uma experiência interativa e envolvente.
+
+            Com recursos modernos e um ambiente intuitivo, a <strong>EducaNow</strong> busca conectar alunos e
+            professores de forma dinâmica, facilitando o acesso ao conhecimento e impulsionando o futuro da educação.
+
+            Seja bem-vindo à revolução do aprendizado! </p>
+        <img src="./img/Sobre.png" width="600px" , height="350px">
+    </section>
+    <footer>
+        <p>&copy; 2025 EducaNow. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Beatrys Belo & Marco Antônio</strong></p>
+        <p>Contato: <a href="educanowsuporte@gmail.com">educanowsuporte@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>

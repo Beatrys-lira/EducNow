@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <title>EducaNow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: rgb(6, 38, 68);
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav {
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        nav ul li {
+            display: inline;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(6, 38, 68);
+            
+        }
+        .tab-button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+           text-align: center;
+           color:aliceblue;
+        }
+        .active {
+            display: block;
+        }
+       
+        footer {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 35px 0;
+            margin-top: auto;
+            position: relative;
+        }
+
+        footer a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" width="150px" , height="150px">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./cursos.html">CURSOS</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+    
+    <div id="cursos" class="tab-content active">
+        <h1>Cursos</h1>
+        <h2> Orátoria</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cTQHrNOlAUo?si=gurZNhPyxB9coZDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Informatica básica</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9fNHAD7ZDL4?si=VkykIa3HyldtF4BF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Libras</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZDkdbPqUZg?si=ThMYkzQ91niimgGV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Excel do 0</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QQhXangMDNA?si=_eC7LZxTYxDYZ13M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </div>
+
+  
+    
+    <footer>
+        <p>&copy; 2025 EducaNow. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Beatrys Belo & Marco Antônio</strong></p>
+        <p>Contato: <a href="educanowsuporte@gmail.com">educanowsuporte@gmail.com</a></p>
+    </footer>
+    
+</body>
+
+</html>
